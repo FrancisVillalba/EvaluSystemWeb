@@ -80,12 +80,12 @@ function Clients({
       <section className="clients-main">
         <header className="clients-header">
           <div>
-            <p className="eyebrow">ABM de clientes</p>
+            <p className="eyebrow">Gestion de clientes</p>
             <h1>Lista de clientes</h1>
             <p>Consulta clientes registrados y filtra por estado o tipo.</p>
           </div>
           <button className="clients-primary" type="button" onClick={onNewClient}>
-            Agregar cliente
+            Nuevo cliente
           </button>
         </header>
 

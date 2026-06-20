@@ -74,7 +74,7 @@ function ClientEntry({
       <section className="client-entry-main">
         <header className="client-entry-header">
           <div>
-            <p className="eyebrow">ABM de clientes</p>
+            <p className="eyebrow">Gestion de clientes</p>
             <h1>{isEditing ? 'Editar cliente' : 'Nuevo cliente'}</h1>
             <p>
               {isEditing
