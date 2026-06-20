@@ -1,0 +1,35 @@
+.brand-logo {
+  width: fit-content;
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  color: #e8fbf9;
+  position: relative;
+  z-index: 1;
+}
+
+.brand-symbol {
+  width: 46px;
+  height: auto;
+  fill: none;
+  stroke: #a5eee7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.brand-name {
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  font-weight: 300;
+  letter-spacing: 0.14em;
+  line-height: 0.95;
+}
+
+.brand-tagline {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.28em;
+  line-height: 1;
+  text-transform: uppercase;
+}

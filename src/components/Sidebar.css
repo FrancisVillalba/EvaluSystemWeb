@@ -1,0 +1,110 @@
+.app-sidebar {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 24px 16px;
+  background: #07353f;
+  color: #ffffff;
+}
+
+.app-sidebar .brand-logo {
+  width: 100%;
+  justify-items: center;
+  text-align: center;
+}
+
+.app-sidebar .brand-symbol {
+  width: 30px;
+}
+
+.app-sidebar .brand-name {
+  font-size: 1.05rem;
+  letter-spacing: 0.12em;
+}
+
+.app-sidebar .brand-tagline {
+  max-width: 180px;
+  font-size: 0.5rem;
+  line-height: 1.45;
+}
+
+.app-sidebar nav {
+  display: grid;
+  gap: 8px;
+}
+
+.app-sidebar nav button,
+.app-sidebar-logout {
+  border: 0;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.76);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 11px 13px;
+  text-align: left;
+}
+
+.app-sidebar nav button {
+  background: transparent;
+}
+
+.app-sidebar nav button:hover,
+.app-sidebar nav button.active {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.app-sidebar-logout {
+  margin-top: auto;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (max-width: 1080px) {
+  .app-sidebar {
+    min-height: auto;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+  }
+
+  .app-sidebar nav {
+    display: flex;
+    min-width: max-content;
+  }
+
+  .app-sidebar .brand-logo {
+    width: fit-content;
+  }
+
+  .app-sidebar-logout {
+    margin-top: 0;
+    margin-left: auto;
+    min-width: max-content;
+  }
+}
+
+@media (max-width: 620px) {
+  .app-sidebar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .app-sidebar nav {
+    width: 100%;
+    display: grid;
+  }
+
+  .app-sidebar .brand-logo {
+    width: 100%;
+  }
+
+  .app-sidebar-logout {
+    width: 100%;
+    margin-left: 0;
+  }
+}

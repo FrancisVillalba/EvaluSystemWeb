@@ -1,0 +1,264 @@
+.clients-shell {
+  min-height: 100svh;
+  display: grid;
+  grid-template-columns: 232px minmax(0, 1fr);
+  background: #eef3f5;
+}
+
+.clients-main {
+  min-width: 0;
+  padding: 22px 30px 30px;
+}
+
+.clients-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  margin-bottom: 14px;
+}
+
+.clients-header h1 {
+  margin: 0 0 6px;
+  color: #0f2735;
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  line-height: 1.1;
+}
+
+.clients-header p:last-child,
+.clients-panel-heading p {
+  color: #687988;
+}
+
+.clients-primary {
+  border: 0;
+  border-radius: 8px;
+  background: #0c5f72;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 850;
+  min-width: max-content;
+  padding: 13px 18px;
+  box-shadow: 0 14px 26px rgba(12, 95, 114, 0.16);
+}
+
+.clients-primary:hover {
+  background: #08495a;
+}
+
+.clients-panel {
+  min-width: 0;
+  border: 1px solid #dfe8ed;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(15, 39, 53, 0.06);
+}
+
+.clients-filters {
+  display: grid;
+  grid-template-columns: minmax(280px, 2fr) minmax(180px, 1fr) minmax(180px, 1fr);
+  gap: 14px;
+  border: 1px solid #dfe8ed;
+  border-radius: 8px;
+  background: #ffffff;
+  margin-bottom: 14px;
+  padding: 16px;
+  box-shadow: 0 12px 30px rgba(15, 39, 53, 0.05);
+}
+
+.clients-filters label {
+  display: grid;
+  gap: 7px;
+  color: #506779;
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+.clients-filters input,
+.clients-filters select {
+  width: 100%;
+  border: 1px solid #bfcbd3;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #0f2735;
+  min-height: 40px;
+  padding: 9px 11px;
+  outline: none;
+}
+
+.clients-filters input:focus,
+.clients-filters select:focus {
+  border-color: #1d9f92;
+  box-shadow: 0 0 0 3px rgba(29, 159, 146, 0.13);
+}
+
+.clients-panel-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.clients-panel-heading h2 {
+  margin: 0 0 6px;
+  color: #0f2735;
+  font-size: 1.18rem;
+}
+
+.clients-panel-heading p {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+.clients-table-wrap {
+  overflow-x: auto;
+}
+
+.clients-table {
+  width: 100%;
+  min-width: 1180px;
+  border-collapse: collapse;
+}
+
+.clients-table th,
+.clients-table td {
+  border-bottom: 1px solid #edf2f5;
+  padding: 12px 10px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.clients-table th {
+  color: #6b7c8b;
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.clients-table td {
+  color: #203747;
+  font-size: 0.9rem;
+}
+
+.client-status,
+.carrier-status {
+  display: inline-flex;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 6px 10px;
+}
+
+.client-status {
+  background: #e7f5f3;
+  color: #0c6a61;
+}
+
+.client-status.inactivo,
+.carrier-status {
+  background: #f1f4f6;
+  color: #687988;
+}
+
+.carrier-status.yes {
+  background: #e5f0ff;
+  color: #19599f;
+}
+
+.client-row-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.client-row-actions button {
+  border: 0;
+  border-radius: 6px;
+  background: #e7f5f3;
+  color: #0c5f72;
+  cursor: pointer;
+  font-weight: 850;
+  padding: 7px 11px;
+}
+
+.client-row-actions .delete-client {
+  background: #fdecec;
+  color: #b33131;
+}
+
+.clients-empty {
+  margin: 18px 0 0;
+  color: #687988;
+  font-weight: 700;
+}
+
+.clients-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-top: 1px solid #edf2f5;
+  margin-top: 14px;
+  padding-top: 14px;
+}
+
+.clients-pagination span,
+.clients-pagination strong {
+  color: #506779;
+  font-size: 0.88rem;
+}
+
+.clients-pagination div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.clients-pagination button {
+  border: 0;
+  border-radius: 6px;
+  background: #e7f5f3;
+  color: #0c5f72;
+  cursor: pointer;
+  font-weight: 850;
+  padding: 8px 12px;
+}
+
+.clients-pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+@media (max-width: 1080px) {
+  .clients-shell {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 720px) {
+  .clients-main {
+    padding: 22px;
+  }
+
+  .clients-header,
+  .clients-panel-heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .clients-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .clients-primary {
+    width: 100%;
+  }
+
+  .clients-pagination,
+  .clients-pagination div {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
