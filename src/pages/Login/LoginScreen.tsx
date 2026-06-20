@@ -60,7 +60,7 @@ function LoginScreen({ onLogin }: LoginScreenProps) {
             <a href="#recuperar">Olvide mi contrasena</a>
           </div>
 
-          <button type="submit">Entrar al tablero</button>
+          <button type="submit">Ingresar</button>
         </form>
       </section>
     </main>
